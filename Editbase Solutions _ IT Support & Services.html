@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Editbase Solutions | IT Support, Networking & Cybersecurity</title>
+<meta name="description" content="IT support and services, installation, consulting, software development, network monitoring, cybersecurity, backups, Wi‑Fi design, and managed IT for businesses." />
+<style>
+:root{--bg:#070A12;--card:#0F1730;--text:#EAF0FF;--muted:#AEB7D6;--brand:#5EEAD4;--brand2:#60A5FA;--line:rgba(255,255,255,.10);--shadow:0 18px 60px rgba(0,0,0,.45);--radius:18px;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px);background:#070A12}
+*{box-sizing:border-box}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;background:radial-gradient(1000px 500px at 15% -10%,rgba(96,165,250,.35),transparent 60%),radial-gradient(900px 500px at 90% 0%,rgba(94,234,212,.30),transparent 55%),linear-gradient(180deg,#070A12 0%,#050713 100%);background-color:#070A12;color:var(--text)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(7,10,18,.72);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px}
+.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,rgba(94,234,212,.95),rgba(96,165,250,.95));box-shadow:0 10px 30px rgba(94,234,212,.18);position:relative;overflow:hidden}
+.logo:after{content:"";position:absolute;inset:-30px;background:radial-gradient(circle at 30% 30%,rgba(255,255,255,.55),transparent 40%);transform:rotate(12deg)}
+nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0}
+nav a{display:inline-flex;align-items:center;color:var(--muted);padding:10px 12px;border-radius:12px;border:1px solid transparent;transition:.2s;font-weight:600;font-size:14px}
+nav a:hover{color:var(--text);border-color:rgba(255,255,255,.14);background:rgba(255,255,255,.04)}
+.cta{display:flex;gap:10px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 14px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--text);font-weight:800;font-size:inherit;font-family:inherit;cursor:pointer;transition:.2s;white-space:nowrap}
+.btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}
+.btn.primary{border:1px solid rgba(94,234,212,.45);background:linear-gradient(135deg,rgba(94,234,212,.20),rgba(96,165,250,.16));box-shadow:0 14px 40px rgba(94,234,212,.12)}
+.hero{padding:56px 0 26px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;align-items:stretch}
+.hero h1{margin:0;font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.6px}
+.lead{margin:14px 0 18px;color:var(--muted);font-size:16px;line-height:1.7;max-width:58ch}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 22px}
+.badge{display:flex;align-items:center;gap:9px;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);font-weight:700;font-size:13px}
+.dot{width:10px;height:10px;border-radius:999px;background:var(--brand);box-shadow:0 0 0 6px rgba(94,234,212,.15)}
+.panel{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;position:relative;overflow:hidden}
+.panel:before{content:"";position:absolute;inset:-2px;background:radial-gradient(700px 280px at 80% 0%,rgba(94,234,212,.18),transparent 55%),radial-gradient(500px 260px at 0% 10%,rgba(96,165,250,.16),transparent 60%);pointer-events:none}
+.panel>*{position:relative}
+.panel h3{margin:0 0 8px;font-size:16px}
+.mini{display:grid;gap:10px;margin-top:10px}
+.mini-row{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border-radius:14px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.10)}
+.mini-row span{color:var(--muted);font-weight:700;font-size:13px}
+.mini-row strong{font-size:13px;text-align:right}
+.section{padding:34px 0}
+.section-title{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px}
+.section-title h2{margin:0;font-size:22px;letter-spacing:-.2px}
+.section-title p{margin:0;color:var(--muted);line-height:1.6;max-width:56ch;font-weight:600;font-size:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:rgba(15,23,48,.72);border:1px solid rgba(255,255,255,.10);border-radius:var(--radius);padding:16px;transition:.2s;min-height:120px}
+.card:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.18);background:rgba(18,27,58,.78)}
+.card h4{margin:0 0 8px;font-size:15px}
+.card p{margin:0;color:var(--muted);font-weight:600;line-height:1.6;font-size:13.5px}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:10px;align-content:start}
+.li{display:flex;gap:10px;align-items:flex-start;padding:12px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.10);border-radius:16px}
+.check{width:18px;height:18px;border-radius:6px;background:rgba(94,234,212,.18);border:1px solid rgba(94,234,212,.35);display:flex;align-items:center;justify-content:center;flex:0 0 auto;margin-top:1px}
+.check svg{width:12px;height:12px;fill:var(--brand)}
+.li strong{display:block;font-size:14px;margin-top:1px}
+.li span{color:var(--muted);font-weight:600;font-size:13px;line-height:1.55;display:block}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
+.hours-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:var(--radius);border:1px solid rgba(255,255,255,.12);background:rgba(15,23,48,.58)}
+.hours-table th,.hours-table td{padding:12px;border-bottom:1px solid rgba(255,255,255,.08);text-align:left;font-size:14px;font-weight:700}
+.hours-table th{color:var(--muted);font-weight:800;font-size:13px;background:rgba(255,255,255,.02)}
+.hours-table tr:last-child td{border-bottom:none}
+.contact-grid{display:grid;gap:12px}
+.field{display:flex;flex-direction:column;gap:8px}
+label{color:var(--muted);font-weight:800;font-size:13px}
+input,textarea{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.14);color:var(--text);padding:12px;border-radius:14px;outline:none;font-size:14px;font-family:inherit}
+textarea{min-height:98px;resize:vertical}
+input:focus,textarea:focus{border-color:rgba(94,234,212,.45);box-shadow:0 0 0 4px rgba(94,234,212,.12)}
+.form-note{color:var(--muted);font-weight:650;font-size:13px;line-height:1.6;margin:0}
+#status{display:none;color:var(--brand);font-weight:700;font-size:14px}
+footer{padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-weight:650}
+.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.small-links{display:flex;gap:10px;flex-wrap:wrap}
+.small-links a{padding:8px 10px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:var(--muted);font-weight:800;font-size:13px}
+@media (max-width:940px){.hero-grid,.grid-3,.services,.split{grid-template-columns:1fr}nav ul{display:none}.cta .btn:first-child{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="tick" viewBox="0 0 24 24"><path d="M9.2 16.2 4.9 12l1.4-1.4 2.9 2.8 8-8 1.4 1.4z"/></symbol></svg>
+
+<header>
+<div class="container nav">
+<div class="brand"><div class="logo" aria-hidden="true"></div>
+<div><div style="font-size:14px;color:var(--muted);font-weight:850;letter-spacing:.3px">Editbase Solutions</div><div style="font-size:16px">IT Support &amp; Services</div></div></div>
+<nav aria-label="Primary navigation"><ul>
+<li><a href="#services">Services</a></li><li><a href="#about">How We Help</a></li><li><a href="#hours">Hours</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="cta"><a class="btn" href="tel:0437400236">Call: 043 740 0236</a><a class="btn primary" href="#contact">Request Support</a></div>
+</div>
+</header>
+
+<main>
+<section class="hero"><div class="container hero-grid">
+<div>
+<h1>Reliable IT support, cybersecurity, and network services—built for small &amp; growing businesses.</h1>
+<p class="lead">From help desk and on-site support to Wi‑Fi design, backups, and digital transformation, Editbase Solutions keeps your systems secure, stable, and running smoothly.</p>
+<div class="badges">
+<div class="badge"><span class="dot"></span>5‑Star Business Reviews</div>
+<div class="badge"><span class="dot" style="background:var(--brand2);box-shadow:0 0 0 6px rgba(96,165,250,.14)"></span>Managed IT &amp; Maintenance</div>
+<div class="badge"><span class="dot" style="background:#FBBF24;box-shadow:0 0 0 6px rgba(251,191,36,.15)"></span>Fast Installations &amp; Support</div>
+</div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px"><a class="btn primary" href="#services">Explore Services</a><a class="btn" href="#contact">Get a Quote</a></div>
+</div>
+<aside class="panel" aria-label="Contact summary">
+<h3>Contact &amp; Location</h3>
+<div class="mini">
+<div class="mini-row"><span>Phone</span><strong>043 740 0236</strong></div>
+<div class="mini-row"><span>Address</span><strong>22 10th Ave, Gonubie, KuGompo City, 5256</strong></div>
+<div class="mini-row"><span>Support Focus</span><strong>IT Support • Networking • Cybersecurity</strong></div>
+</div>
+<div style="margin-top:14px;padding:14px 12px;border-radius:16px;border:1px dashed rgba(255,255,255,.18);background:rgba(0,0,0,.14)">
+<div style="font-weight:900;margin-bottom:6px">Need help now?</div>
+<div style="color:var(--muted);font-weight:650;line-height:1.6;font-size:13.5px">Call us during opening hours or send a request below—our team will respond as soon as possible.</div>
+</div>
+</aside>
+</div></section>
+
+<section class="section" id="services"><div class="container">
+<div class="section-title"><h2>Our Services</h2><p>End‑to‑end IT solutions: from setup and monitoring to repairs, backups, Wi‑Fi design, and cybersecurity compliance.</p></div>
+<div class="services">
+<ul class="list">
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>IT Support &amp; Services</strong><span>Help desk, technical support, on‑site assistance, and managed IT.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Installation &amp; IT Maintenance</strong><span>Preventative maintenance, upgrades, migrations, and maintenance contracts.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Network Operations &amp; Monitoring</strong><span>Monitoring, troubleshooting, and reliable network performance.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Cybersecurity &amp; Compliance</strong><span>Security improvements and compliance support to reduce risk.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Data Backup &amp; Recovery</strong><span>Cloud backup solutions and recovery planning for business continuity.</span></div></li>
+</ul>
+<ul class="list">
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>IT Consulting &amp; Digital Transformation</strong><span>Strategic guidance to modernize systems, processes, and infrastructure.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Software Development &amp; Integration</strong><span>Custom development and integration across your tools and systems.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Wi‑Fi Design &amp; Installation</strong><span>Design, install, and optimize Wi‑Fi coverage for your business.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Server &amp; Infrastructure Setup</strong><span>Server installation, maintenance, and IT infrastructure setup.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Technology Procurement &amp; Upgrades</strong><span>Procurement support, system upgrades, and smooth migrations.</span></div></li>
+<li class="li"><div class="check"><svg><use href="#tick"/></svg></div><div><strong>Printer Sales &amp; Installation</strong><span>Printer sales with setup and installation assistance.</span></div></li>
+</ul>
+</div>
+</div></section>
+
+<section class="section" id="about"><div class="container">
+<div class="section-title"><h2>How We Work</h2><p>Clear processes from first response to long‑term maintenance—so your IT stays secure and dependable.</p></div>
+<div class="grid-3">
+<div class="card"><h4>1) Assess &amp; Diagnose</h4><p>We identify the root cause—whether it’s network performance, device issues, or security gaps.</p></div>
+<div class="card"><h4>2) Fix &amp; Install</h4><p>We install, upgrade, or troubleshoot with a focus on stability, speed, and clean configuration.</p></div>
+<div class="card"><h4>3) Prevent &amp; Monitor</h4><p>Preventative maintenance, monitoring, backups, and ongoing support to reduce downtime.</p></div>
+</div>
+</div></section>
+
+<section class="section" id="hours"><div class="container"><div class="split">
+<div>
+<div class="section-title" style="margin-bottom:12px"><h2>Opening Hours</h2><p>Visit us or contact us during working hours for faster support.</p></div>
+<table class="hours-table" aria-label="Opening hours table">
+<thead><tr><th>Day</th><th>Hours</th></tr></thead>
+<tbody>
+<tr><td>Monday</td><td>8:30 am – 5:30 pm</td></tr>
+<tr><td>Tuesday</td><td>8:30 am – 5:30 pm</td></tr>
+<tr><td>Wednesday</td><td>8:30 am – 5:30 pm</td></tr>
+<tr><td>Thursday</td><td>8:30 am – 5:30 pm</td></tr>
+<tr><td>Friday</td><td>8:30 am – 5:00 pm</td></tr>
+<tr><td>Saturday</td><td>8:30 am – 12:30 pm</td></tr>
+<tr><td>Sunday</td><td>Closed</td></tr>
+</tbody></table>
+<p class="form-note" style="margin-top:12px">*If you have an urgent IT issue, call us at <a href="tel:0437400236" style="color:var(--text);font-weight:900">043 740 0236</a>.</p>
+</div>
+<div id="contact">
+<div class="section-title" style="margin-bottom:12px"><h2>Request Support / Get a Quote</h2><p>Send a message and we’ll get back to you.</p></div>
+<div class="panel" style="box-shadow:none;padding:16px">
+<form id="f"><div class="contact-grid">
+<div class="field"><label for="name">Your Name</label><input id="name" name="name" required placeholder="e.g., Thandi M." /></div>
+<div class="field"><label for="phone">Phone (optional)</label><input id="phone" name="phone" placeholder="e.g., 0xx xxx xxxx" /></div>
+<div class="field"><label for="service">What do you need help with?</label><input id="service" name="service" required placeholder="e.g., Wi‑Fi setup, network troubleshooting, backups..." /></div>
+<div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Briefly describe the issue or project."></textarea></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between"><button class="btn primary" type="submit">Send Request</button><a class="btn" href="tel:0437400236">Call Instead</a></div>
+<div id="status" role="status">Thanks! This is a demo form. Connect it to email or a form service to receive requests.</div>
+<p class="form-note">Address: 22 10th Ave, Gonubie, KuGompo City, 5256 • Phone: 043 740 0236</p>
+</div></form>
+</div>
+</div>
+</div></div></section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div><div style="color:var(--text);font-weight:900;margin-bottom:6px">Editbase Solutions</div><div>IT support and services • Installation • Consulting • Networking • Cybersecurity • Backups</div></div>
+<div class="small-links"><a href="#services">Services</a><a href="tel:0437400236">Call</a><a href="#hours">Hours</a></div>
+</div>
+<div class="container" style="margin-top:16px;font-size:13px">© <span id="year"></span> Editbase Solutions. All rights reserved.</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();document.getElementById("status").style.display="block"});
+</script>
+</body>
+</html>
